@@ -24,15 +24,15 @@ android {
             }
         }
         // Add build time to BuildConfig
-        buildConfigField "long", "BUILD_TIME_MILLIS", "${buildTime()}"
+        buildConfigField "long", "BUILD_TIME_MILLIS", "Long.MAX_VALUE"
     }
 
     signingConfigs {
         debug {
-            storeFile file('dev_keystore.jks')
-            storePassword 'kJCp!Bda#PBdN2RLK%yMK@hatq&69E'
-            keyPassword 'kJCp!Bda#PBdN2RLK%yMK@hatq&69E'
-            keyAlias 'key0'
+            storeFile file('keystore.jks')
+            storePassword "keystore-pass"
+            keyPassword "keystore-pass"
+            keyAlias "testkey"
         }
     }
 
