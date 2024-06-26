@@ -2,20 +2,7 @@ name: Debug Build
 
 on:
   push:
-    branches:
-      - 'master'
-      - 'AppManager-*'
-    paths-ignore:
-      - 'fastlane/**'
-      - 'scripts/**'
-      - '*.md'
-  pull_request:
-    branches: [ master ]
-    paths-ignore:
-      - 'fastlane/**'
-      - 'scripts/**'
-      - '*.md'
-
+    workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
