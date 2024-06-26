@@ -29,7 +29,7 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file('keystore.jks')
+            storeFile file("keystore.jks")
             storePassword "keystore-pass"
             keyPassword "keystore-pass"
             keyAlias "testkey"
